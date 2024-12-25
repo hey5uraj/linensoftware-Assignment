@@ -1,4 +1,8 @@
-## To run this project 2 command in 2 terminals
+## To run this project 
+
+Install dependency 
+
+### `npm install`
 
 To run the project 
 
