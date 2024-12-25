@@ -39,7 +39,7 @@ const ProductDetails = () => {
     try {
       const res = await axios.delete(`http://localhost:3001/products/${productSlug}`)
 
-      navigate("/products")
+      navigate("/")
 
     } catch (error) {
       console.error('Error fetching products:', error);
