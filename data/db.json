@@ -1,0 +1,140 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Apple",
+      "type": "fruit",
+      "price": 1.99,
+      "description": "Fresh red delicious apples",
+      "image": "https://images.pexels.com/photos/102104/pexels-photo-102104.jpeg"
+    },
+    {
+      "id": "2",
+      "name": "Banana",
+      "type": "fruit",
+      "price": 0.99,
+      "description": "Sweet yellow bananas",
+      "image": "https://images.pexels.com/photos/1093038/pexels-photo-1093038.jpeg"
+    },
+    {
+      "id": "3",
+      "name": "Carrot",
+      "type": "vegetable",
+      "price": 1.49,
+      "description": "Fresh orange carrots",
+      "image": "https://images.pexels.com/photos/1306559/pexels-photo-1306559.jpeg"
+    },
+    {
+      "id": "4",
+      "name": "Broccoli",
+      "type": "vegetable",
+      "price": 2.99,
+      "description": "Fresh green broccoli",
+      "image": "https://images.pexels.com/photos/47347/broccoli-vegetable-food-healthy-47347.jpeg"
+    },
+    {
+      "id": "6",
+      "name": "Tomato",
+      "type": "vegetable",
+      "price": 0.99,
+      "description": "Fresh red tomatoes",
+      "image": "https://images.pexels.com/photos/1327838/pexels-photo-1327838.jpeg"
+    },
+    {
+      "id": "8",
+      "name": "Cucumber",
+      "type": "vegetable",
+      "price": 1.29,
+      "description": "Crisp green cucumbers",
+      "image": "https://images.pexels.com/photos/3568039/pexels-photo-3568039.jpeg"
+    },
+    {
+      "id": "9",
+      "name": "Grapes",
+      "type": "fruit",
+      "price": 2.99,
+      "description": "Sweet purple grapes",
+      "image": "https://images.pexels.com/photos/708777/pexels-photo-708777.jpeg"
+    },
+    {
+      "id": "10",
+      "name": "Bell Pepper",
+      "type": "vegetable",
+      "price": 1.49,
+      "description": "Colorful bell peppers",
+      "image": "https://images.pexels.com/photos/128536/pexels-photo-128536.jpeg"
+    },
+    {
+      "id": "11",
+      "name": "Pineapple",
+      "type": "fruit",
+      "price": 3.99,
+      "description": "Sweet tropical pineapple",
+      "image": "https://images.pexels.com/photos/1161547/pexels-photo-1161547.jpeg"
+    },
+    {
+      "id": "12",
+      "name": "Onion",
+      "type": "vegetable",
+      "price": 0.79,
+      "description": "Fresh red onions",
+      "image": "https://images.pexels.com/photos/144206/pexels-photo-144206.jpeg"
+    },
+    {
+      "id": "13",
+      "name": "Mango",
+      "type": "fruit",
+      "price": 2.49,
+      "description": "Ripe yellow mangoes",
+      "image": "https://images.pexels.com/photos/918643/pexels-photo-918643.jpeg"
+    },
+    {
+      "id": "14",
+      "name": "Cauliflower",
+      "type": "vegetable",
+      "price": 2.99,
+      "description": "Fresh white cauliflower",
+      "image": "https://images.pexels.com/photos/6316515/pexels-photo-6316515.jpeg"
+    },
+    {
+      "id": "15",
+      "name": "Watermelon",
+      "type": "fruit",
+      "price": 5.99,
+      "description": "Sweet juicy watermelon",
+      "image": "https://images.pexels.com/photos/1313267/pexels-photo-1313267.jpeg"
+    },
+    {
+      "id": "16",
+      "name": "Potato",
+      "type": "vegetable",
+      "price": 0.99,
+      "description": "Fresh brown potatoes",
+      "image": "https://images.pexels.com/photos/2286776/pexels-photo-2286776.jpeg"
+    },
+    {
+      "id": "18",
+      "name": "Zucchini",
+      "type": "vegetable",
+      "price": 1.49,
+      "description": "Fresh green zucchini",
+      "image": "https://images.pexels.com/photos/128420/pexels-photo-128420.jpeg"
+    },
+    {
+      "id": "19",
+      "name": "Peach",
+      "type": "fruit",
+      "price": 1.99,
+      "description": "Sweet juicy peaches",
+      "image": "https://images.pexels.com/photos/1028599/pexels-photo-1028599.jpeg"
+    },
+    {
+      "id": "20",
+      "name": "Lettuce",
+      "type": "vegetable",
+      "price": 1.99,
+      "description": "Fresh green lettuce",
+      "image": "https://images.pexels.com/photos/1199562/pexels-photo-1199562.jpeg"
+    }
+  ]
+}
