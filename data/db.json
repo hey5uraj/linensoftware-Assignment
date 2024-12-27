@@ -136,5 +136,32 @@
       "description": "Fresh green lettuce",
       "image": "https://images.pexels.com/photos/1199562/pexels-photo-1199562.jpeg"
     }
+  ],
+  "cart": [
+    {
+      "id": "2",
+      "quantity": 3,
+      "price": 0.99
+    },
+    {
+      "id": "3",
+      "quantity": 2,
+      "price": 1.49
+    },
+    {
+      "id": "1",
+      "quantity": 1,
+      "price": 1.99
+    },
+    {
+      "id": "4",
+      "quantity": 2,
+      "price": 2.99
+    },
+    {
+      "id": "6",
+      "quantity": 2,
+      "price": 0.99
+    }
   ]
 }

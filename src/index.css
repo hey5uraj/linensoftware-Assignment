@@ -42,7 +42,7 @@ a {
 
 .container {
   max-width: 1400px;
-  width: 80%;
+  width: 100%;
   padding: 42px 35px;
   display: flex;
   align-items: center;
@@ -72,16 +72,24 @@ a {
   font-weight: 600;
   color: #fff;
 }
+.logo-brand>a>h1{
+  font-size: 2rem;
+}
 
 .total-price>h1 {
   font-weight: 600;
   color: #047d0f;
 
 
+
 }
 
-.product-cart>svg {
+.product-cart>a>svg {
   font-size: 3rem;
+  cursor: pointer;
+}
+.product-cart>a>svg:hover {
+ color: #16469d;
 }
 
 /* ------------------Filter------------------- */
@@ -543,4 +551,72 @@ textarea {
 .prodDetail>span>svg {
   width: 30px;
   height: 30px;
+}
+
+
+.cont
+{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  
+}
+.cartWrapper
+{
+  max-width: 1400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+ 
+
+}
+.cartWrapper>h3
+{
+  font-size: 35px;
+
+  }
+
+.cart
+{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.productItem
+{
+display: grid;
+grid-template-columns: 200px 1fr;
+padding: 10px;
+border-radius: 10px;
+width: 100%;
+gap: 30px;
+
+}
+.productImage
+{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.productImage>img
+{
+  width: 100%;
+  max-height: 200px;
+  border-radius: 10px;
+}
+.productInfo{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.productName
+{
+  display: flex;
+  gap: 3px;
+  flex-direction: column;
 }

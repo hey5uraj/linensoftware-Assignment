@@ -43,32 +43,79 @@ const Home = () => {
 
     }
   }
+
+  const getCart = async () => {
+    try {
+      
+    
+    const cartRes = await axios.get(`http://localhost:3001/cart`);
+    const { data } = cartRes;
+    console.log(data);
+    const total = data.reduce((total, item) => total + (item.price*item.quantity), 0);
+    setTotalPrice(total)
+  } catch (error) {
+      console.log("error getting data")
+  }
+  }
   useEffect(() => {
     getAllproducts();
+    getCart();
   }, [])
 
 
 
 
 
-  const handleAddToCart = (products) => {
-    setCart((prev) => {
-      return [...prev, products]
-    })
+  const handleAddToCart = async (product) => {
+    // setCart((prev) => {
+    //   return [...prev, products]
+    // })
 
+
+    try {
+
+      let cartData;
+      try {
+        const cartRes = await axios.get(`http://localhost:3001/cart/${product.id}`);
+        cartData = cartRes.data;
+
+      } catch (error) {
+        console.log("no product with that id")
+      }
+      if (cartData) {
+
+
+        const res = await axios.patch(`http://localhost:3001/cart/${product.id}`, {
+          id: product.id,
+          quantity: cartData.quantity + 1,
+          price: product.price,
+        })
+      }
+      else {
+        const res = await axios.post(`http://localhost:3001/cart`, {
+          id: product.id,
+          quantity: 1,
+          price: product.price,
+        })
+
+      }
+
+    } catch (error) {
+      console.log(error)
+    }
+    finally {
+      getCart();
+    }
 
 
   }
 
-  useEffect(() => {
-    const total = cart.reduce((total, item) => total + item.price, 0);
-    setTotalPrice(total)
-  }, [cart])
+ 
 
 
 
 
-  // 
+
 
 
   return (

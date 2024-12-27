@@ -1,19 +1,22 @@
-import React, { useState,useContext } from 'react'
+import React, { useState, useContext } from 'react'
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import "../pages/Header.css"
 import { AppContext } from '../components/layouts/Layout';
+import { Link } from 'react-router-dom';
 
 
 const Header = () => {
 
-    const {totalPrice}=useContext(AppContext);
+    const { totalPrice } = useContext(AppContext);
 
     return (
         <>
             <header className='headerDiv'>
                 <div className="container">
                     <div className="logo-brand">
-                        <h1>GFG Fruit & Vegetable Market</h1>
+                        <Link to="/">
+                            <h1>GFG Fruit & Vegetable Market</h1>
+                        </Link>
                     </div>
 
                     <div className="total-price">
@@ -21,7 +24,9 @@ const Header = () => {
                     </div>
 
                     <div className="product-cart">
-                        <ShoppingCartIcon />
+                        <Link to="/cart">
+                            <ShoppingCartIcon />
+                        </Link>
                     </div>
 
 

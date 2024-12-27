@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const Filters = ({ filters, setFilters, handleAddProductModal }) => {
 
@@ -10,6 +10,11 @@ const Filters = ({ filters, setFilters, handleAddProductModal }) => {
         }));
     }
 
+    const [selectProudct, setSelectProduct] = useState(false);
+
+    const handleSelect = () => {
+        setSelectProduct(!selectProudct);
+    }
 
     return (
         <main>
@@ -46,7 +51,14 @@ const Filters = ({ filters, setFilters, handleAddProductModal }) => {
 
                     <div className='customBtn'>
                         <button onClick={handleAddProductModal} className='submitBtn'>Add Product</button>
-                        <button className="buy-now-btn">Buy Now</button>
+                        {/* {
+                            selectProudct ? (
+                                <button className="buy-now-btn" >Buy Now</button>
+                            ) : (
+                                <button className="buy-now-btn" disabled style={{background:"gray"}}>Buy Now</button>
+
+                            )
+                        } */}
                     </div>
                 </div>
 
